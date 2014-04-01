@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="image_view" name="image_view" type="image_view">
+    <remap from="image" to="/usb_cam/image_raw"/>
+  </node>
+
+  <node pkg="turtlebot_teleop" name="turtlebot_teleop_key" type="turtlebot_teleop_key"/>
+</launch>
